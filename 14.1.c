@@ -5,12 +5,12 @@ int main()
 {
 	char c = 'a';
 	int n = 1;
-	for (int i = 0; i < 8; i++)
+	for (int i = 8; i > 0; i--)
 	{
 		printf("+- - -+- - -+- - -+- - -+- - -+- - -+- - -+- - -+\n");
 		for (int j = 0; j < 8; j++)
 		{
-			printf("| %c%d  ", c + j, n + i);
+			printf("| %c%d  ", c + j, i);
 		}
 		//printf("+- - -+\n");
 		printf("|\n");
@@ -50,4 +50,3 @@ int main()
 }
 
 
-// long long have memory of  2^63 -1 so the last one won't work
